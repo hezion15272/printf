@@ -4,8 +4,8 @@
 
 For this project, students are expected to look at these concepts:
 
-Group Projects
+[Group Projects](https://alx-intranet.hbtn.io/concepts/111)
 
-Flowcharts
+[Flowcharts](https://alx-intranet.hbtn.io/concepts/130)
 
-Approaching a Project
+[Approaching a Project](https://alx-intranet.hbtn.io/concepts/350)
