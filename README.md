@@ -2,7 +2,7 @@
 
 # Concepts
 
-For this project, students are expected to look at these concepts:
+_For this project, students are expected to look at these concepts:_
 
   - [Group Projects](https://alx-intranet.hbtn.io/concepts/111)
 
