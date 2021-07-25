@@ -17,7 +17,7 @@ The aim of this project is to develop a function _ _printf_ that replicates the 
   - Making use of the different forms of algorithms to solve complex problems
   - And how to work as a team
  # Tasks
- ## mandatory
+ ### mandatory
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 
 Write a function that produces output according to a format.
