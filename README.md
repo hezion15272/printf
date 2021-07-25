@@ -1,12 +1,9 @@
 # 0x11. C - printf
-
 # Concepts
-
 _For this project, students are expected to look at these concepts:_
   - [Group Projects](https://alx-intranet.hbtn.io/concepts/111)
   - [Flowcharts](https://alx-intranet.hbtn.io/concepts/130)
   - [Approaching a Project](https://alx-intranet.hbtn.io/concepts/350)
-
 # Requirements
 ## General
   - All files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
