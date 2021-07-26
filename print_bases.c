@@ -191,7 +191,7 @@ int hex_check(int num, char x)
 		return (Hex[num]);
 	return (0);
 	
-int print_pointers(va_list ap)
+int print_pointer(va_list ap)
 {
 	int count = 0;
 	unsigned int a[16];
