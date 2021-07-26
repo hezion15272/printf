@@ -190,7 +190,32 @@ int hex_check(int num, char x)
 	else
 		return (Hex[num]);
 	return (0);
+
+/**
+ * _pow - calculates an exponent
+ * @base: base of exponent
+ * @exponent: exponent of number
+ *
+ * Return: base ^ exponent
+ */
+static unsigned long _pow(unsigned int base, unsigned int exponent)
+{
+	unsigned int i;
+	unsigned long ans = base;
+
+	for (i = 1; i < exponent; i++)
+	{
+		ans *= base;
+	}
+	return (ans);
+}
 	
+/**
+ * print_p - prints an address
+ * @p: address to print
+ *
+ * Return: number of characters to print
+ */
 int print_pointer(va_list ap)
 {
 	int count = 0;
