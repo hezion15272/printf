@@ -6,11 +6,11 @@
  * @ap: is a list that contains all the arguments present in the program
  * Return: a total count of the characters printed.
  */
-int parser(const char *format, struct convert f_list[], va_list ap)
+int parser(const char *format, convert f_list[], va_list ap)
 {
-	int i, j, r_val, print_char;
+	int i, j, r_val, print_chars;
 
-	print_char = 0;
+	print_chars = 0;
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
@@ -19,10 +19,10 @@ int parser(const char *format, struct convert f_list[], va_list ap)
 			{
 				if (format[i + 1] == f_list[j].symbol[0])
 				{
-					r_val = f_list[j].f(ap);
+					r_val = f_list[j].func(ap);
 					if (r_val == -1)
 						return (-1);
-					print_char += r_val;
+					print_chars += r_val;
 					break;
 				}
 			}
@@ -32,7 +32,7 @@ int parser(const char *format, struct convert f_list[], va_list ap)
 				{
 					_putchar(format[i]);
 					_putchar(format[i + 1]);
-					print_char = print_char + 2;
+					print_chars = print_chars + 2;
 				}
 				else 
 					return (-1);
@@ -42,8 +42,8 @@ int parser(const char *format, struct convert f_list[], va_list ap)
 		else
 		{
 			_putchar(format[i]);
-			print_char++
+			print_chars++;
 		}
 	}
-	return (print_char);
+	return (print_chars);
 }

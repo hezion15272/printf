@@ -10,13 +10,13 @@
  * @symbol: operations signs
  * @func: The functions associated
  */
-struct convert
+typedef struct convert
 {
 	char *symbol;
 	int (*func)(va_list);
-};
+}convert;
 
-int parser(const char *format, convert f_list[], va_list ap;
+int parser(const char *format, convert f_list[], va_list ap);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list);

@@ -5,8 +5,8 @@
  */
 int _printf(const char *format, ...)
 {
-	int print_char;
-	struct convert f_list[] = {
+	int print_chars;
+	convert f_list[] = {
 		{"c", print_char},
 		{"s", print_string},
 		{"d", print_integer},
@@ -26,9 +26,9 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 		return (-1);
 
-	va_start(ap, format)I;
+	va_start(ap, format);
 	/* reference parser(); */
-	print_char = parser(format, f_list, ap);
+	print_chars = parser(format, f_list, ap);
 	va_end(ap);
-	return (print_char);
+	return (print_chars);
 }
