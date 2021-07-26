@@ -31,5 +31,11 @@ int unsigned_integer(va_list);
 int print_octal(va_list list);
 int print_hex(va_list list);
 int print_heX(va_list list);
+int print_unsigned_number(unsigned int);
+unsigned int base_len(unsigned int, int);
+char *rev_string(char *);
+void write_base(char *str);
+char *_memcpy(char *dest, char *src, unsigned int n);
+
 
 #endif /* _HOLBERTON_H_ */
