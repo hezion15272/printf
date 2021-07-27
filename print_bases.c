@@ -127,7 +127,6 @@ int print_hex(va_list list)
 	return (len);
 }
 
-
 /**
  * print_heX - Prints a representation of a decimal number on base16 Uppercase
  * @list: List of the arguments passed to the function
@@ -192,8 +191,7 @@ int hex_check(int num, char x)
 	return (0);
 }
 
-/*r
- * r: invalid storage class for function
+/**
  * _pow - calculates an exponent
  * @base: base of exponent
  * @exponent: exponent of number
@@ -211,10 +209,10 @@ static unsigned long _pow(unsigned int base, unsigned int exponent)
 	}
 	return (ans);
 }
-	
+
 /**
- * print_p - prints an address
- * @p: address to print
+ * print_pointer - prints an address
+ * @ap: address to print
  *
  * Return: number of characters to print
  */
@@ -225,7 +223,6 @@ int print_pointer(va_list ap)
 	unsigned int i, sum;
 	unsigned long n, m;
 	char *str = "(nil)";
-	
 
 	n = va_arg(ap, unsigned long);
 	if (n == 0)
@@ -240,7 +237,7 @@ int print_pointer(va_list ap)
 	_putchar('0');
 	_putchar('x');
 	count = 2;
-	m = _pow(16, 15); /* 16 ^ 15 */
+	m = _pow(16, 15);
 	a[0] = n / m;
 	for (i = 1; i < 16; i++)
 	{

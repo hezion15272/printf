@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
  * _printf - Takes input of parameters to print a formated string.
+ * @format: is the type of argument to be specified
  * Return: A total count of the characters printed
  */
 int _printf(const char *format, ...)

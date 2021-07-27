@@ -14,7 +14,7 @@ typedef struct convert
 {
 	char *symbol;
 	int (*func)(va_list);
-}convert;
+} convert;
 
 int parser(const char *format, convert f_list[], va_list ap);
 int _printf(const char *format, ...);
