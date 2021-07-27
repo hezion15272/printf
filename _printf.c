@@ -10,6 +10,7 @@ int _printf(const char *format, ...)
 	convert f_list[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"S", print_S},
 		{"d", print_integer},
 		{"i", print_integer},
 		{"b", print_binary},
