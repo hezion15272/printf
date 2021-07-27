@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * parser - This function compares the parameters with the arguments and produces an output
- * @format: format string containing the characters and the specifiers
+ * parser - This function compares the parameters with the arguments
+ * @format: format string contains the characters
  * @f_list: is a list that contains all types of functions
- * @ap: is a list that contains all the arguments present in the program
+ * @ap: is a list that contains all the arguments
  * Return: a total count of the characters printed.
  */
 int parser(const char *format, convert f_list[], va_list ap)
@@ -34,7 +34,7 @@ int parser(const char *format, convert f_list[], va_list ap)
 					_putchar(format[i + 1]);
 					print_chars = print_chars + 2;
 				}
-				else 
+				else
 					return (-1);
 			}
 			i = i + 1;
