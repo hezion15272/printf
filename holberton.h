@@ -21,7 +21,7 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list);
 int print_string(va_list);
-int print_pointer(va_list);
+int print_pointer(va_list ap);
 int print_percent(va_list);
 int print_integer(va_list);
 int print_number(va_list);
@@ -37,6 +37,5 @@ unsigned int base_len(unsigned int, int);
 char *rev_string(char *);
 void write_base(char *str);
 char *_memcpy(char *dest, char *src, unsigned int n);
-
 
 #endif /* _HOLBERTON_H_ */

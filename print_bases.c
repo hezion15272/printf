@@ -190,8 +190,10 @@ int hex_check(int num, char x)
 	else
 		return (Hex[num]);
 	return (0);
+}
 
-/**
+/*r
+ * r: invalid storage class for function
  * _pow - calculates an exponent
  * @base: base of exponent
  * @exponent: exponent of number
@@ -223,8 +225,9 @@ int print_pointer(va_list ap)
 	unsigned int i, sum;
 	unsigned long n, m;
 	char *str = "(nil)";
+	
 
-	n = va_arg(p, unsigned long);
+	n = va_arg(ap, unsigned long);
 	if (n == 0)
 	{
 		for (i = 0; str[i]; i++)
